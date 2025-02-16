@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.head{
+    text-align: center;
+    margin: 15px 0px;
+}
+.head h3{
+    text-transform: uppercase;
+}.head p{
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+.inputs{
+    margin: 0px 10px;
+}
+input{
+    color: #fff;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #111;
+    border: none;
+    outline: none;
+    transition: .6s;
+}
+input:hover{
+    transform: scale(1.04);
+}
+
+.totalInput input{
+    width: 20%;
+}
+#total{
+    padding: 5px 5px;
+    border-radius: 2px;
+    background-color: rgb(109, 3, 3);
+}
+#total::before{
+    content: "total:";
+}
+#image{
+    width: 200px;
+    color: white;
+    font-weight: 600;
+}
+
+/* ==============outputs=========== */
+
+.outputs{
+    margin: 0px 10px;
+}
+button{
+    border-radius: 10px;
+    background-color: rgb(64, 14, 164);
+    color: #467adb;
+    outline: none;
+    font-weight: 800;
+    width:100%;
+    padding: 5px;
+    margin: 5px 0px;
+    transition: .6s;
+}
+button:hover{
+    transform: scale(1.04);
+    color: #9b9393;
+    letter-spacing: 1px;
+}
+
+.searchMood{
+    display: flex;
+    justify-content: space-around;
+}
+.searchMood button{
+    width: 40%;
+}
+/* ==========table========= */
+table{
+    text-align: center;
+    width: 100%;
+}
+thead{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+td{
+    padding: 5px;
+}
