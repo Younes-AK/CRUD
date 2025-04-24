@@ -77,7 +77,7 @@ submit.onclick = function(){
 
 function displayData(){
     let table = '';
-    let path = "Users/yakazdao/Desktop/CRUDS/images/ryan.jpg";
+    let path = "images/ryan.jpg";
     for(let i = 0; i < products.length; i++){
         table += `
             <tr>
@@ -89,7 +89,7 @@ function displayData(){
                 <td>${products[i].discount}</td>
                 <td>${products[i].total}</td>
                 <td>${products[i].category}</td>
-                <td><img src="${path}"></td>
+                <td> <img src="${products[i].imagePath}"/> </td>
                 <td><button id="update" onclick = "updateItem(${i})">Update</button></td>
                 <td><button onclick = "deleteItem(${i})" >Delete</button></td>
             </tr>
@@ -191,9 +191,16 @@ function checkSearchMood(id){
         displayData();
     }
 }
-// let imgbtn = document.getElementById('imgBtn');
-// imgbtn.onclick = function c(i){
-//     console.log(products[0].imagePath);
-// }
+submit.addEventListener("click", ()=>{
+document.getElementById("image").addEventListener("change", function(event) {
+    const file = event.target.files[0]; // Get the selected file
+    if (file) {
+        console.log("File name:", file.name); // Prints only the file name
+        console.log("File object:", file); // Prints the file object with details
+    }
+    });
+});
+
+submit.addEventListener
 
 displayData();
